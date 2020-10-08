@@ -1,0 +1,128 @@
+<style>
+  body {
+    background: url(https://cdn.pixabay.com/photo/2016/06/02/02/33/triangles-1430105_960_720.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .all-form {
+    border: 1px solid cyan;
+    padding: 50px;
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+
+  .panel-footer>button {
+    background-color: steelblue;
+    color: seashell;
+  }
+</style>
+
+
+<body ng-app="myApp">
+  <div class="container" tyle="text-align: center;" ng-controller="LoginCtrl">
+    <div class="all-form my-3">
+      <div>
+        <div class="panel panel-default">
+          <div class="panel-heading" style="font-size: xx-large; font-weight: bold; color: aqua;text-align: center;">
+            <span class="glyphicon glyphicon-lock"></span> ĐĂNG NHẬP
+          </div>
+          <div class="panel-body">
+            <form class="form-horizontal" role="form" name="studentForm">
+              <div class="form-group">
+                <div> <label for="username" style=" font-weight: bold; color: lightskyblue;">User Name :</label>
+                  <input type="text"  required class="form-control" ng-model="loginForm.username" name="username"
+                    id="username" aria-describedby="usernamehelpId" placeholder="Họ và tên">
+                  <small id="helpId" class="text-warning" ng-show="studentForm.username.$invalid"
+                    class="form-text text-muted">Vui lòng nhập tên đăng nhập</small>
+                </div>
+              </div>
+              <div class="form-group"> <label for="inputPassword3" class=" control-label"
+                  style=" font-weight: bold;color: lightskyblue;">Password:</label>
+                <div> <input class="form-control" ng-model="loginForm.password" id="inputPassword3"
+                    placeholder="Mật khẩu" required="" type="password">
+                  <small id="helpId" class="text-danger" ng-show="studentForm.password.$invalid"
+                    class="form-text text-muted">Vui lòng nhập mật khẩu </small>
+                </div>
+              </div>
+              <div class="form-group">
+                <div>
+                  <div class="checkbox"> <label>
+                      <input type="checkbox">Nhớ thông tin
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group last">
+                <!--<div class="col-sm-offset-3 col-sm-9"> <a href="#"><button type="submit" class="btn btn-success btn-sm"> Đăng ký</button></a>
+                       <a href="#"><button type="reset" class="btn btn-default btn-sm"> Quên mật khẩu?</button></a> 
+                    </div> -->
+              </div>
+            </form>
+          </div>
+          <div style="text-align: center  ; color: steelblue;" class="panel-footer"><button type="button" class="btn btn-primary" data-toggle="modal"
+              ng-click="checkLogin();"> Đăng Nhập</button>
+            <!-- đăng kí here-->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
+              data-whatever="@mdo">Đăng Ký</button>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Đăng Ký</h5> 
+                   
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-row">
+                        <div class="col">
+                          <label for="recipient-name" class="col-form-label">Họ Và Tên</label>
+                          <input type="text" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="col">
+                          <label for="recipient-name" class="col-form-label">Tên Đăng Nhập</label>
+                          <input type="text" class="form-control" placeholder="UserName">
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="col">
+                          <label for="recipient-name" class="col-form-label">Mật Khẩu</label>
+                          <input type="password" class="form-control" placeholder="PassWord">
+                        </div>
+                        <div class="col">
+                          <label for="recipient-name" class="col-form-label">Nhập Lại Mật Khẩu :</label>
+                          <input type="password" class="form-control" placeholder="RePassWord">
+                        </div>
+                      </div>
+                      
+
+                      ------
+                      <div class="form-row">
+                        <div class="col">
+                          <label>vui lòng</label>
+                        </div>
+                      </div>
+                     
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Đăng Ký</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

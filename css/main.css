@@ -1,0 +1,130 @@
+.cardfooter{
+    text-align: center;
+    background-color: #1e5c8b;
+    margin-left: 15px ;
+    margin-right: 15px;
+    color: white;
+}
+.card-header1{
+    background-color: #4CAF50;
+    color: #fff;
+    font-weight: 700px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px 6px 0 0;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+.card-body1{
+    padding: 5px 15px 15px;
+    height: 320px;
+}
+.text-sc{
+    color: #28a745 !important;
+    font-weight: 700 !important;
+}
+.tittle{
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.pageTitle {
+    text-align: center;
+    width: 100%;
+    text-transform: capitalize;
+    color: #fff;
+    margin: 30px 0 3px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 700;
+}
+.inner-headline{
+    background: #4CAF50;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    color: #fefefe;
+    border-top: 0px solid #33691E;
+}
+.contact{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid darkmagenta;
+}
+.heading{
+text-align: center;
+    color: #19329C;
+    text-transform: uppercase;
+    letter-spacing: .025em;
+    margin: 0;
+    margin-bottom: 1.1666666667em;
+    font-family: "UTMHelve","SFUHelvetica",Arial,sans-serif;
+    font-size: 1.875rem;
+    font-weight: 400;
+}
+.heading>strong{
+    font-weight: 700;
+    color: #FF1919;
+    margin-left: .2333333333em;
+}
+.ques{
+    margin-left: 50px;
+}
+.joinCultureContact__form {
+    margin-top: 1.875rem;
+    margin-bottom: 1.875rem;
+    font-size: .875rem;
+    background: #fff;
+    -webkit-box-shadow: 0 5px 15px 0 rgba(32,69,164,0.15);
+    box-shadow: 0 5px 15px 0 rgba(32,69,164,0.15);
+    border-radius: 20px;
+    margin-top: 5.625rem;
+    margin-bottom: 5.625rem;
+    padding: 2.5rem 1.25rem 1.25rem;
+    color: #282828;
+    font-size: 1rem;
+    line-height: 1.375;
+}
+.joinCultureContact__formInner {
+    max-width: 1012px;
+    margin: 0 auto;
+}
+.statistical {
+    padding: 40px 0;
+    background: url(../img/data/statistical-bg.png) 50% 100% no-repeat #4CAF50;
+    background-size: cover;
+}
+.wrap {
+    max-width: 1180px;
+    padding: 0 15px;
+    width: 100%;
+    margin: 0 auto;
+}
+.statistical .list-static li {
+    width: 50%;
+    margin-bottom: 20px;
+}
+.statistical .list-static li {
+    width: 25%;
+    padding: 0 20px;
+    text-align: center;
+    font-weight: 700;
+    color: #fff;
+}
+.statistical .list-static {
+    display: flex;
+    flex-flow: wrap;
+}
+.title-cmn{
+    color: #fefefe;
+    text-align: center;
+    margin-bottom: 100px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
